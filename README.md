@@ -54,11 +54,11 @@ For predicting: predicting_data_reject,predicting_data_validate
 # Model Training 
 1) Data Export from Db - The data in a stored database is exported as a CSV file to be used for model training.
 2) Data Preprocessing   
-   a) Drop columns not useful for training the model. Such columns were selected while doing the EDA.
-   b) Replace the invalid values(‘?’) with numpy “nan” so we can use imputer on such values.
-   c) Encode the categorical values
-   d) Check for null values in the columns. If present, impute the null values using the KNN imputer.
-   e)top four feature is selected with Selectkbest & chi2
+   -  Drop columns not useful for training the model. Such columns were selected while doing the EDA.
+   -  Replace the invalid values(‘?’) with numpy “nan” so we can use imputer on such values.
+   -  Encode the categorical values
+   -  Check for null values in the columns. If present, impute the null values using the KNN imputer.
+   -  top four feature is selected with Selectkbest & chi2
 3) Model Selection - After feature selection, we find the best model for each cluster. We are using two algorithms, "Random Forest" and "Xgboost". For each cluster, both the algorithms are passed with the best parameters derived from GridSearch. We calculate the AUC scores for both models and select the model with the best score. Similarly, the model is selected for each cluster. All the models for every cluster are saved for use in prediction. 
  
 # Prediction Data Description
@@ -89,11 +89,11 @@ For predicting: predicting_data_reject,predicting_data_validate
  
 1) Data Export from Db - The data in the stored database is exported as a CSV file to be used for prediction.
 2) Data Preprocessing   
-   a) Drop columns not useful for training the model. Such columns were selected while doing the EDA.
-   b) Replace the invalid values with numpy “nan” so we can use imputer on such values.
-   c) Encode the categorical values
-   d) Check for null values in the columns. If present, impute the null values using the KNN imputer.
-e)top four feature is selected with Selectkbest & chi2
+   - Drop columns not useful for training the model. Such columns were selected while doing the EDA.
+   - Replace the invalid values with numpy “nan” so we can use imputer on such values.
+   - Encode the categorical values
+   - Check for null values in the columns. If present, impute the null values using the KNN imputer.
+   - top four feature is selected with Selectkbest & chi2
 3) Prediction -  the best model is loaded and is used to predict the data .
 4) Once the prediction is made, the predictions along with the original names before label encoder are saved in a CSV file at a given location and the location is returned to the client.
 
