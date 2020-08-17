@@ -140,7 +140,7 @@ Then go to the console of your account.
 - And then it will give you the link for your app, and the deployed app looks like:
 - To save money, go to settings and disable your app.
   
-#Team member
+# Team member
 - Gokul Pisharody(myself)
 - Sanjay Kumar
 - Devi  Arumugam
