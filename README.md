@@ -1,4 +1,16 @@
 # Credit_Approval
+# Context
+- Problem Statement
+- Attribute 
+- Data Description
+- Data Validation
+- Data Insertion in Database
+- Model Training
+- Prediction Data Description
+- Data Validation
+- Data Insertion in Database
+- Prediction
+
 # Problem Statement
 To build a classification methodology to predict the Credit Approved or not based on the given training data. 
 # Attribute 
