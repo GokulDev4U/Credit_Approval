@@ -36,7 +36,7 @@ For predicting: predicting_data_reject,predicting_data_validate
    b) Replace the invalid values(‘?’) with numpy “nan” so we can use imputer on such values.
    c) Encode the categorical values
    d) Check for null values in the columns. If present, impute the null values using the KNN imputer.
-e)top four feature is selected with Selectkbest & chi2
+   e)top four feature is selected with Selectkbest & chi2
 3) Model Selection - After feature selection, we find the best model for each cluster. We are using two algorithms, "Random Forest" and "Xgboost". For each cluster, both the algorithms are passed with the best parameters derived from GridSearch. We calculate the AUC scores for both models and select the model with the best score. Similarly, the model is selected for each cluster. All the models for every cluster are saved for use in prediction. 
  
 # Prediction Data Description
