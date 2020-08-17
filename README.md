@@ -74,3 +74,5 @@ For predicting: predicting_data_reject,predicting_data_validate
 e)top four feature is selected with Selectkbest & chi2
 3) Prediction -  the best model is loaded and is used to predict the data .
 4) Once the prediction is made, the predictions along with the original names before label encoder are saved in a CSV file at a given location and the location is returned to the client.
+
+
