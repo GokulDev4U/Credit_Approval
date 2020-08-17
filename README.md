@@ -122,7 +122,8 @@ For predicting: predicting_data_reject,predicting_data_validate
 # Deployment
 Go to https://cloud.google.com/ and create an account if already haven’t created one. 
 Then go to the console of your account.
-- Go to IAM and admin(highlighted) and click manage resources. • Click CREATE PROJECT to create a new project for deployment.
+- Go to IAM and admin(highlighted) and click manage resources. 
+- Click CREATE PROJECT to create a new project for deployment.
 - Once the project gets created, select App Engine and select Dashboard.
 - Go to https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe to download the google cloud SDK to your machine.
 - Click Start Tutorial on the screen and select Python app and click start.
