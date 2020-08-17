@@ -1,4 +1,4 @@
-# Credit card Approval
+# Credit Card Approval
 # Context
 - [Demo](https://github.com/GokulDev4U/Credit_Approval/blob/master/README.md#demo)
 - [Problem Statement](https://github.com/GokulDev4U/Credit_Approval/blob/master/README.md#problem-statement)
