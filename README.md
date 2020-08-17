@@ -11,6 +11,7 @@
 - [Data Validation](https://github.com/GokulDev4U/Credit_Approval/blob/master/README.md#data-validation-1)
 - [Data Insertion in Database](https://github.com/GokulDev4U/Credit_Approval/blob/master/README.md#data-insertion-in-database-1)
 - [Prediction](https://github.com/GokulDev4U/Credit_Approval/blob/master/README.md#prediction)
+- [Deployment](https://github.com/GokulDev4U/Credit_Approval/blob/master/README.md#deployment)
 
 
 # Demo
@@ -114,4 +115,23 @@ For predicting: predicting_data_reject,predicting_data_validate
 3) Prediction -  the best model is loaded and is used to predict the data .
 4) Once the prediction is made, the predictions along with the original names before label encoder are saved in a CSV file at a given location and the location is returned to the client.
 
+# Deployment
+Go to https://cloud.google.com/ and create an account if already haven’t created one. 
+Then go to the console of your account.
+• Go to IAM and admin(highlighted) and click manage resources. • Click CREATE PROJECT to create a new project for deployment.
+• Once the project gets created, select App Engine and select Dashboard.
+• Go to https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe to download the google cloud SDK to your machine.
+• Click Start Tutorial on the screen and select Python app and click start.
+• Check whether the correct project name is displayed and then click next.
+• Create a file ‘app.yaml’ and put ‘runtime: python37’ in that file.
+• Create a ‘requirements.txt’ file by opening the command prompt/anaconda prompt, navigate to the project folder and enter the command ‘pip freeze > requirements.txt’.
+  It is recommended to use separate environments for different projects.
+• Your python application file should be called ‘main.py’. It is a GCP specific requirement.
+• Open command prompt window, navigate to the project folder and enter the command gcloud init to initialise the gcloud context.
+• It asks you to select from the list of available projects.
+• Once the project name is selected, enter the command gcloud app deploy app.yaml --project <project name>.
+• After executing the above command, GCP will ask you to enter the region for your application. Choose the appropriate one.
+• GCP will ask for the services to be deployed. Enter ‘y’ to deploy the services.
+• And then it will give you the link for your app, and the deployed app looks like:
+• To save money, go to settings and disable your app.
 
